@@ -10,7 +10,7 @@
 
 unsigned int win_w = 640;
 unsigned int win_h = 400;
-const std::string SHADERS_DIR = "/home/hofnarr/projects/openglpaska/src/shaders";
+const std::string SHADERS_DIR = "./src/shaders";
 
 int** generateXorTexture(unsigned int width, unsigned int height) {
     int** xorTexArray = 0;
