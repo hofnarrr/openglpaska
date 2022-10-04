@@ -1,0 +1,9 @@
+CMakeFiles/
+Debug/
+Makefile
+CMakeCache.txt
+compile_commands.json
+cmake_install.cmake
+
+libglad.a
+openglpaska
