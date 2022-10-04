@@ -58,9 +58,7 @@ int main(int argc, char *argv[]) {
         /* -0.5f,  0.5f,  0.0f, 0.0f, 0.0f, 0.0f */
     };
 
-    const unsigned int vtxIndex[] = {
-        0, 1, 2
-    };
+    const unsigned int vtxIndex[] = { 0, 1, 2 };
 
     const GLuint posAttrIdx = 0;
     const GLuint colorAttrIdx = 1;
@@ -96,7 +94,7 @@ int main(int argc, char *argv[]) {
     const char *vtxShaderSrc = vtxShaderSrcStr.c_str();
     std::cout << "=== vtxShader: " << vtxShaderFile << std::endl;
     std::cout << vtxShaderSrc << std::endl;
-    std::cout << "=============" << std::endl;
+    std::cout << "=============" << std::endl << std::endl; 
 
     // load fragment shader code
     std::string fragShaderFile = SHADERS_DIR + "/paska.frag";
@@ -104,7 +102,7 @@ int main(int argc, char *argv[]) {
     const char *fragShaderSrc = fragShaderSrcStr.c_str();
     std::cout << "=== fragShader: " << fragShaderFile << std::endl;
     std::cout << fragShaderSrc << std::endl;
-    std::cout << "=============" << std::endl;
+    std::cout << "=============" << std::endl << std::endl;
 
     // create shader
     Shader shader(vtxShaderSrc, fragShaderSrc);
