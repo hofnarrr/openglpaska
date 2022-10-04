@@ -142,23 +142,19 @@ int main(int argc, char *argv[]) {
 
     // rendering loop
     while (!glfwWindowShouldClose(window)) {
+        // shader uniform defs
+        float suf_dTime = glfwGetTime();
+
         processInput(window);
 
         // blank
         glClearColor(0.0, 0.0, 0.0, 1.0);
         glClear(GL_COLOR_BUFFER_BIT);
 
-        // shader uniform defs
-        float suf_dTime = glfwGetTime();
-
         shader.use();
 
         shader.set2UInt("iResolution", win_w, win_h);
         shader.setDouble("dTime", suf_dTime);
-
-        // shader uniform assignment
-        /* glUniform1d(sufloc_dTime, suf_dTime); */
-        /* glUniform2ui(sufloc_iResolution, win_w, win_h); */
 
         glBindVertexArray(VAO);
         glDrawElements(GL_TRIANGLES, 6, GL_UNSIGNED_INT, 0);
