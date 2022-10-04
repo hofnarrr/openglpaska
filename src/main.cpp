@@ -48,17 +48,17 @@ void processInput(GLFWwindow *window) {
 int main(int argc, char *argv[]) {
 
     const float vertices[] = {
-        // position          // color
-         0.0f,  0.5f,  0.0f, 1.0f, 0.0f, 0.0f,
-         0.5f,  -0.5f,  0.0f, 1.0f, 1.0f, 0.0f,
-        -0.5f,  -0.5f,  0.0f, 0.5f, 0.0f, 1.0f,
-         /* 0.5f,  0.5f,  0.0f, 1.0f, 0.0f, 0.0f, */
-         /* 0.5f, -0.5f,  0.0f, 0.0f, 1.0f, 0.0f, */
-        /* -0.5f, -0.5f,  0.0f, 0.0f, 0.0f, 1.0f, */
-        /* -0.5f,  0.5f,  0.0f, 0.0f, 0.0f, 0.0f */
+        // position             // color
+        -1.0f, -1.0f,  0.0f,    0.0f, 0.0f, 0.0f, // bot-left
+         1.0f, -1.0f,  0.0f,    0.0f, 0.0f, 0.0f, // bot-right
+        -1.0f,  1.0f,  0.0f,    0.0f, 0.0f, 0.0f, // top-left
+
+         1.0f,  1.0f,  0.0f,    0.0f, 0.0f, 0.0f, // top-right
+        -1.0f,  1.0f,  0.0f,    0.0f, 0.0f, 0.0f, // top-left
+         1.0f, -1.0f,  0.0f,    0.0f, 0.0f, 0.0f, // bot-right
     };
 
-    const unsigned int vtxIndex[] = { 0, 1, 2 };
+    const unsigned int vtxIndex[] = { 0, 1, 2, 3, 4, 5 };
 
     const GLuint posAttrIdx = 0;
     const GLuint colorAttrIdx = 1;
