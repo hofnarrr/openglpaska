@@ -97,7 +97,7 @@ int main(int argc, char *argv[]) {
     std::cout << "=============" << std::endl << std::endl; 
 
     // load fragment shader code
-    std::string fragShaderFile = SHADERS_DIR + "/paska.frag";
+    std::string fragShaderFile = SHADERS_DIR + "/ripuli.frag";
     const std::string fragShaderSrcStr = file_get_contents(fragShaderFile);
     const char *fragShaderSrc = fragShaderSrcStr.c_str();
     std::cout << "=== fragShader: " << fragShaderFile << std::endl;

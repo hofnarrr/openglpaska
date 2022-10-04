@@ -1,6 +1,6 @@
 #version 420
 uniform double dTime;
-uniform vec2 iResolution;
+uniform uvec2 iResolution;
 
 out vec4 FragColor;
 
